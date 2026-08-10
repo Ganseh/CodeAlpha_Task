@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Image Gallery</h1>
+    <p>How a Tech-gallery is supossed to look like.</p>
+</header>
+
+<!-- Filter Buttons -->
+<div class="filter-buttons">
+
+    <button class="active" data-filter="all">All</button>
+
+    <button data-filter="python">Python Mastery</button>
+
+    <button data-filter="web">Web Development</button>
+
+    <button data-filter="networking">Networking</button>
+
+    <button data-filter="piano">Piano</button>
+
+</div>
+
+<!-- Gallery -->
+
+<div class="gallery">
+
+    <!-- Python -->
+    <div class="card python"><img src="Photo1.jpg" alt="Python"></div>
+    <div class="card python"><img src="Photo2.jpg" alt="Python"></div>
+    <div class="card python"><img src="Photo3.jpg" alt="Python"></div>
+    <div class="card python"><img src="Photo4.jpg" alt="Python"></div>
+    <div class="card python"><img src="Photo5.jpg" alt="Python"></div>
+    <div class="card python"><img src="Photo6.jpg" alt="Python"></div>
+
+    <!-- Web Development -->
+    <div class="card web"><img src="Photo7.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo8.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo9.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo10.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo11.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo12.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo13.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo14.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo15.jpg" alt="Web Development"></div>
+    <div class="card web"><img src="Photo16.jpg" alt="Web Development"></div>
+
+    <!-- Networking -->
+    <div class="card networking"><img src="Photo17.jpg" alt="Networking"></div>
+    <div class="card networking"><img src="Photo18.jpg" alt="Networking"></div>
+    <div class="card networking"><img src="Photo19.jpg" alt="Networking"></div>
+    <div class="card networking"><img src="Photo20.jpg" alt="Networking"></div>
+    <div class="card networking"><img src="Photo21.jpg" alt="Networking"></div>
+    <div class="card networking"><img src="Photo22.jpg" alt="Networking"></div>
+
+    <!-- Piano -->
+    <div class="card piano"><img src="Photo23.jpg" alt="Piano"></div>
+    <div class="card piano"><img src="Photo24.jpg" alt="Piano"></div>
+    <div class="card piano"><img src="Photo25.jpg" alt="Piano"></div>
+
+</div>
+
+<!-- Lightbox -->
+
+<div class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">
+        <i class="fa-solid fa-angle-left"></i>
+    </button>
+
+    <img id="lightbox-image">
+
+    <button class="next">
+        <i class="fa-solid fa-angle-right"></i>
+    </button>
+
+    <div class="caption">
+        Beautiful Image
+    </div>
+
+    <div class="thumbnails">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

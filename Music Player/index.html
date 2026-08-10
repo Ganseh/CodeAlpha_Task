@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="music-player">
+
+        <!-- Music Player Header -->
+        <h1>My Music Player</h1>
+
+        <!-- Album Cover -->
+        <div class="cover-container">
+            <img id="cover" src="images/image1.jpg" alt="Album Cover">
+        </div>
+
+        <!-- Song Information -->
+        <div class="song-info">
+            <h2 id="song-title">Song 1</h2>
+            <p id="artist">My Artist</p>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+
+            <span id="current-time">0:00</span>
+
+            <input 
+                type="range" 
+                id="progress-bar" 
+                value="0"
+                min="0"
+                max="100"
+            >
+
+            <span id="duration">0:00</span>
+
+        </div>
+
+        <!-- Main Controls -->
+        <div class="controls">
+
+            <button id="previous">
+                ⏮
+            </button>
+
+            <button id="play">
+                ▶
+            </button>
+
+            <button id="next">
+                ⏭
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+        <div class="volume-section">
+
+            <span>🔊</span>
+
+            <input 
+                type="range" 
+                id="volume" 
+                min="0" 
+                max="1" 
+                step="0.01" 
+                value="1"
+            >
+
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+            <h3>Playlist</h3>
+
+            <div class="playlist-song active" data-index="0">
+                🎵 Song 1
+            </div>
+
+            <div class="playlist-song" data-index="1">
+                🎵 Song 2
+            </div>
+
+            <div class="playlist-song" data-index="2">
+                🎵 Song 3
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
